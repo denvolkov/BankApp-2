@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 524E051625791CFA0044F104 /* Build configuration list for PBXProject "BankApp#2" */;
+			buildConfigurationList = 524E051625791CFA0044F104 /* Build configuration list for PBXProject "Bank#2" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -322,7 +322,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		524E051625791CFA0044F104 /* Build configuration list for PBXProject "BankApp#2" */ = {
+		524E051625791CFA0044F104 /* Build configuration list for PBXProject "Bank#2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				524E052D25791CFF0044F104 /* Debug */,
