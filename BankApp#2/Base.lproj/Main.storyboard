@@ -15,8 +15,28 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999999.99 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIQ-Mt-PLI">
+                                <rect key="frame" x="80" y="402.66666666666669" width="230" height="38.666666666666686"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Баланс" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RA8-0j-wV8">
+                                <rect key="frame" x="142" y="336" width="106" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="AIQ-Mt-PLI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Uft-Zj-0Wr"/>
+                            <constraint firstItem="AIQ-Mt-PLI" firstAttribute="top" secondItem="RA8-0j-wV8" secondAttribute="bottom" constant="24" id="YUI-ZB-gcg"/>
+                            <constraint firstItem="RA8-0j-wV8" firstAttribute="centerX" secondItem="AIQ-Mt-PLI" secondAttribute="centerX" id="cpo-GJ-LAw"/>
+                            <constraint firstItem="AIQ-Mt-PLI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dIk-yx-gYa"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Balance" image="rublesign.circle" catalog="system" id="gpv-sX-54S"/>
                 </viewController>
@@ -31,14 +51,48 @@
                     <view key="view" contentMode="scaleToFill" id="o3D-HE-ruD">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="kHm-CG-LbM">
+                                <rect key="frame" x="16" y="298.33333333333331" width="358" height="247.33333333333331"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Сцмма кредита" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MXk-YD-aag">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="38.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Срок (месяцев)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uqc-id-JgX">
+                                        <rect key="frame" x="0.0" y="63.333333333333371" width="358" height="38.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Годовой процент" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cZc-vu-Gu4">
+                                        <rect key="frame" x="0.0" y="126.66666666666667" width="358" height="38.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ежемесячный платеж: 999999999.99 ₽" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebV-jR-9Te">
+                                        <rect key="frame" x="0.0" y="190" width="358" height="57.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="OIE-NQ-hlA"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="kHm-CG-LbM" firstAttribute="centerY" secondItem="o3D-HE-ruD" secondAttribute="centerY" id="3Fy-4f-0cj"/>
+                            <constraint firstItem="kHm-CG-LbM" firstAttribute="centerX" secondItem="o3D-HE-ruD" secondAttribute="centerX" id="eiZ-bR-wbJ"/>
+                            <constraint firstItem="kHm-CG-LbM" firstAttribute="leading" secondItem="OIE-NQ-hlA" secondAttribute="leading" constant="16" id="oSf-W7-QrK"/>
+                            <constraint firstItem="OIE-NQ-hlA" firstAttribute="trailing" secondItem="kHm-CG-LbM" secondAttribute="trailing" constant="16" id="pWl-hc-uZg"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Loan" image="creditcard" catalog="system" id="4Gs-Qa-j2I"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UU8-Fy-9s0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031" y="534"/>
+            <point key="canvasLocation" x="1030.7692307692307" y="533.17535545023691"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rcO-1S-ap6">
@@ -46,6 +100,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Urr-DC-baJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="40F-67-Cpu">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
