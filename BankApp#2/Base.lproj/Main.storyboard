@@ -11,7 +11,7 @@
         <!--Balance-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BankApp_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BalanceViewController" customModule="BankApp_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,6 +39,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Balance" image="rublesign.circle" catalog="system" id="gpv-sX-54S"/>
+                    <connections>
+                        <outlet property="balanceLabel" destination="AIQ-Mt-PLI" id="LJv-X4-f7T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
