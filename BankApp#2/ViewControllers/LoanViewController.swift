@@ -19,13 +19,14 @@ class LoanViewController: UIViewController {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateMonthlyPaymentsLabel()
+        updateMontlyPaymentsLabel()
     }
     
     // MARK: - Methods
-    func updateMonthlyPaymentsLabel() {
+    func updateMontlyPaymentsLabel() {
         monthlyPaymentLabel.text = nil
         
         guard let nper = Double (nperTextField.text ?? "") else { return }
@@ -35,16 +36,17 @@ class LoanViewController: UIViewController {
         let monthlyPayment = abs(ExcelFormulas.pmt(rate: rate, nper: nper, pv: pv))
         
         let formatter = NumberFormatter()
-        formatter.currencySymbol = "₽"
+        formatter.currencySymbol = ""
         formatter.numberStyle = .currency
-        guard let monthlyPaymentText = formatter.string(from: NSNumber(value: monthlyPayment)) else { return }
-        
-        monthlyPaymentLabel.text = "Ежемесячный платеж: \(monthlyPayment)₽"
+        guard let monthlyPaymentText = formatter.string(from: NSNumber (value: monthlyPayment)) else {
+            return
+        }
+        monthlyPaymentLabel.text = "Ежемесячный платеж: \(monthlyPaymentText)₽"
     }
     
     // MARK: - Actions
     @IBAction func fieldEditingChanged(_ sender: UITextField) {
-        updateMonthlyPaymentsLabel()
+        updateMontlyPaymentsLabel()
     }
     
 }
