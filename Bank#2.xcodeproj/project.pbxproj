@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52080784257E483600BACF45 /* ExcelFormulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52080783257E483600BACF45 /* ExcelFormulas.swift */; };
 		524E051F25791CFA0044F104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E051E25791CFA0044F104 /* AppDelegate.swift */; };
 		524E052125791CFA0044F104 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E052025791CFA0044F104 /* SceneDelegate.swift */; };
 		524E052325791CFA0044F104 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E052225791CFA0044F104 /* BalanceViewController.swift */; };
 		524E052625791CFA0044F104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524E052425791CFA0044F104 /* Main.storyboard */; };
 		524E052825791CFF0044F104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524E052725791CFF0044F104 /* Assets.xcassets */; };
 		524E052B25791CFF0044F104 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524E052925791CFF0044F104 /* LaunchScreen.storyboard */; };
+		527E4C01257E2B0B0097C3CA /* LoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527E4C00257E2B0B0097C3CA /* LoanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52080783257E483600BACF45 /* ExcelFormulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcelFormulas.swift; sourceTree = "<group>"; };
 		524E051B25791CFA0044F104 /* BankApp#2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BankApp#2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		524E051E25791CFA0044F104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		524E052025791CFA0044F104 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		524E052725791CFF0044F104 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		524E052A25791CFF0044F104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		524E052C25791CFF0044F104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		527E4C00257E2B0B0097C3CA /* LoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,23 @@
 			children = (
 				524E052C25791CFF0044F104 /* Info.plist */,
 				524E051E25791CFA0044F104 /* AppDelegate.swift */,
-				524E052225791CFA0044F104 /* BalanceViewController.swift */,
 				524E052025791CFA0044F104 /* SceneDelegate.swift */,
 				524E052725791CFF0044F104 /* Assets.xcassets */,
 				524E052925791CFF0044F104 /* LaunchScreen.storyboard */,
 				524E052425791CFA0044F104 /* Main.storyboard */,
+				527E4C03257E2B710097C3CA /* ViewControllers */,
+				52080783257E483600BACF45 /* ExcelFormulas.swift */,
 			);
 			path = "BankApp#2";
+			sourceTree = "<group>";
+		};
+		527E4C03257E2B710097C3CA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				524E052225791CFA0044F104 /* BalanceViewController.swift */,
+				527E4C00257E2B0B0097C3CA /* LoanViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				527E4C01257E2B0B0097C3CA /* LoanViewController.swift in Sources */,
+				52080784257E483600BACF45 /* ExcelFormulas.swift in Sources */,
 				524E052325791CFA0044F104 /* BalanceViewController.swift in Sources */,
 				524E051F25791CFA0044F104 /* AppDelegate.swift in Sources */,
 				524E052125791CFA0044F104 /* SceneDelegate.swift in Sources */,
