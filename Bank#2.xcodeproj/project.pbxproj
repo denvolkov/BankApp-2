@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		52080784257E483600BACF45 /* ExcelFormulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52080783257E483600BACF45 /* ExcelFormulas.swift */; };
+		52080789257E610E00BACF45 /* Screenshot01.png in Resources */ = {isa = PBXBuildFile; fileRef = 52080787257E610D00BACF45 /* Screenshot01.png */; };
+		5208078A257E610E00BACF45 /* Screenshot02.png in Resources */ = {isa = PBXBuildFile; fileRef = 52080788257E610E00BACF45 /* Screenshot02.png */; };
 		524E051F25791CFA0044F104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E051E25791CFA0044F104 /* AppDelegate.swift */; };
 		524E052125791CFA0044F104 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E052025791CFA0044F104 /* SceneDelegate.swift */; };
 		524E052325791CFA0044F104 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E052225791CFA0044F104 /* BalanceViewController.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		52080783257E483600BACF45 /* ExcelFormulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcelFormulas.swift; sourceTree = "<group>"; };
+		52080787257E610D00BACF45 /* Screenshot01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot01.png; sourceTree = "<group>"; };
+		52080788257E610E00BACF45 /* Screenshot02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot02.png; sourceTree = "<group>"; };
 		524E051B25791CFA0044F104 /* BankApp#2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BankApp#2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		524E051E25791CFA0044F104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		524E052025791CFA0044F104 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52080786257E60C700BACF45 /* ScreenShots */ = {
+			isa = PBXGroup;
+			children = (
+				52080787257E610D00BACF45 /* Screenshot01.png */,
+				52080788257E610E00BACF45 /* Screenshot02.png */,
+			);
+			path = ScreenShots;
+			sourceTree = "<group>";
+		};
 		524E051225791CFA0044F104 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +73,7 @@
 		524E051D25791CFA0044F104 /* BankApp#2 */ = {
 			isa = PBXGroup;
 			children = (
+				52080786257E60C700BACF45 /* ScreenShots */,
 				524E052C25791CFF0044F104 /* Info.plist */,
 				524E051E25791CFA0044F104 /* AppDelegate.swift */,
 				524E052025791CFA0044F104 /* SceneDelegate.swift */,
@@ -140,6 +154,8 @@
 			files = (
 				524E052B25791CFF0044F104 /* LaunchScreen.storyboard in Resources */,
 				524E052825791CFF0044F104 /* Assets.xcassets in Resources */,
+				52080789257E610E00BACF45 /* Screenshot01.png in Resources */,
+				5208078A257E610E00BACF45 /* Screenshot02.png in Resources */,
 				524E052625791CFA0044F104 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
